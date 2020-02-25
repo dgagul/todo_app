@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="761b54a6-01f3-4fa0-8e60-d806f5490bf8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/TodoItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Layout/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/TodoItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TodoItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Todos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Todos.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +54,7 @@
       <workItem from="1582642236034" duration="599000" />
       <workItem from="1582643468321" duration="11000" />
       <workItem from="1582647136244" duration="2174000" />
-      <workItem from="1582661886881" duration="1447000" />
+      <workItem from="1582661886881" duration="8578000" />
     </task>
     <servers />
   </component>
@@ -60,10 +62,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="196" y="246" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582648964565">
+    <state x="35" y="95" key="#Inspections" timestamp="1582672543292">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="196" y="246" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1368.872@0.0.1368.872" timestamp="1582648964565" />
+    <state x="35" y="95" key="#Inspections/0.0.1368.872@0.0.1368.872" timestamp="1582672543292" />
+    <state x="196" y="246" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582671950753">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="196" y="246" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1368.872@0.0.1368.872" timestamp="1582671950753" />
     <state x="166" y="190" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582648603384">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
@@ -72,5 +78,9 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="465" y="191" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1582643477521" />
+    <state x="104" y="187" width="672" height="678" key="search.everywhere.popup" timestamp="1582667809425">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="104" y="187" width="672" height="678" key="search.everywhere.popup/0.0.1368.872@0.0.1368.872" timestamp="1582667809425" />
   </component>
 </project>
