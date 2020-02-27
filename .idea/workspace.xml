@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="761b54a6-01f3-4fa0-8e60-d806f5490bf8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/AddTodo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Pages/About.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/AddTodo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AddTodo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Layout/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Layout/Header.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +38,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -53,7 +57,10 @@
       <workItem from="1582642236034" duration="599000" />
       <workItem from="1582643468321" duration="11000" />
       <workItem from="1582647136244" duration="2174000" />
-      <workItem from="1582661886881" duration="10060000" />
+      <workItem from="1582661886881" duration="11309000" />
+      <workItem from="1582711502390" duration="598000" />
+      <workItem from="1582713808234" duration="4872000" />
+      <workItem from="1582751678963" duration="1762000" />
     </task>
     <servers />
   </component>
@@ -77,6 +84,10 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="465" y="191" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1582643477521" />
+    <state x="0" y="79" key="SettingsEditor" timestamp="1582796709817">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="0" y="79" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1582796709817" />
     <state x="104" y="187" width="672" height="678" key="search.everywhere.popup" timestamp="1582667809425">
       <screen x="0" y="0" width="1368" height="872" />
     </state>

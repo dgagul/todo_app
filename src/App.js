@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from "./Components/Layout/Header";
 import Todos from "./Components/Todos";
+import About from "./Components/Pages/About";
 import AddTodo from "./Components/AddTodo";
 
 import './App.css';
@@ -41,15 +43,37 @@ class App extends Component{
         this.setState({ todos: [...this.state.todos.filter(todo => todo.id !== id)] })
     }
 
+    // Add Todo
+    addTodo = (title) => {
+        const newTodo = {
+            id: 4,
+            title: title,
+            // or just --> title,
+            completed: false
+        }
+        this.setState({ todos: [...this.state.todos, newTodo] });
+    }
+
+
+    // Nested Routs
+    // <Link to={`${match.url}/components`}>Components</Link>
+
   render() {
       return (
-          <div className="App">
-              <div className="container">
-                  <Header />
-                  <AddTodo />
-                  <Todos todos={this.state.todos} markComplete={this.markComplete} delTodo={this.delTodo} />
+          <Router>
+              <div className="App">
+                  <div className="container">
+                      <Header />
+                      <Route exact path="/" render={props => (
+                          <React.Fragment>
+                              <AddTodo addTodo={this.addTodo}/>
+                              <Todos todos={this.state.todos} markComplete={this.markComplete} delTodo={this.delTodo} />
+                          </React.Fragment>
+                      )} />
+                      <Route path="/about" component={About} />
+                  </div>
               </div>
-          </div>
+          </Router>
       );
   }
 }
