@@ -1,32 +1,25 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import axios from 'axios';
 import Header from "./Components/Layout/Header";
 import Todos from "./Components/Todos";
 import About from "./Components/Pages/About";
 import AddTodo from "./Components/AddTodo";
 
+
 import './App.css';
 
 class App extends Component{
     state = {
-        todos: [
-            {
-                id: 1,
-                title: "Take out the trash",
-                completed: false
-            },
-            {
-                id: 2,
-                title: "Dinner with wife",
-                completed: false
-            },
-            {
-                id: 3,
-                title: "Meeting with boss",
-                completed: false
-            }
-        ]
+        todos: []
     }
+
+    // get request to url to get Todos
+    componentDidMount() {
+        axios.get('https://jsonplaceholder.typicode.com/todos?_limit=10')
+            .then(res => this.setState({ todos: res.data }))
+    }
+
 
     // Toggle Complete
     markComplete = (id) => {
@@ -39,19 +32,23 @@ class App extends Component{
     }
 
     // Delete Todo
+    // delete request
     delTodo = (id) => {
-        this.setState({ todos: [...this.state.todos.filter(todo => todo.id !== id)] })
+        axios.delete(`https://jsonplaceholder.typicode.com/todos/${id}`)
+            .then(res => this.setState({ todos: [...this.state.todos.filter
+                (todo => todo.id !== id)] }));
     }
 
     // Add Todo
     addTodo = (title) => {
-        const newTodo = {
-            id: 4,
-            title: title,
-            // or just --> title,
+        // post request to url with data, and UPDATE state with setState( old, 'new' res.data)
+        axios.post('https://jsonplaceholder.typicode.com/todos', {
+            title,
             completed: false
-        }
-        this.setState({ todos: [...this.state.todos, newTodo] });
+            // make sure NEW ID
+        })
+            .then(res => this.setState({ todos: [...this.state.todos, res.data] }));
+
     }
 
 
